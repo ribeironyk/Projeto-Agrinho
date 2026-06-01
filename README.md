@@ -36,7 +36,7 @@ O tema central desta pesquisa é demonstrar como a Inteligência Artificial pode
 ├── css/
 │   └── style.css       # Estilos completos, animações e responsividade
 ├── js/
-│   └── main.js         # Interatividade e manipulação do DOM
+│   └── script.js         # Interatividade e manipulação do DOM
 └── README.md           # Este arquivo
 ```
 

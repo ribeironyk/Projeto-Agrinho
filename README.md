@@ -37,17 +37,6 @@ O tema central desta pesquisa é demonstrar como a Inteligência Artificial pode
 │   └── style.css       # Estilos completos, animações e responsividade
 ├── js/
 │   └── main.js         # Interatividade e manipulação do DOM
-├── img/
-│   ├── logo.svg
-│   ├── hero-illustration.svg
-│   ├── icon-prediction.svg
-│   ├── icon-disease.svg
-│   ├── icon-privacy.svg
-│   ├── icon-precision.svg
-│   ├── icon-deep-learning.svg
-│   ├── icon-data.svg
-│   ├── icon-challenges.svg
-│   └── icon-future.svg
 └── README.md           # Este arquivo
 ```
 

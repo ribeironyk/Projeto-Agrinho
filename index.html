@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pesquisa aprofundada sobre Inteligência Artificial aplicada à Agricultura no Agrinho 2026">
+    <meta name="author" content="Participante Agrinho 2026">
+    <title>IA na Agricultura | Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header" id="header">
+        <div class="header-container">
+            <a href="#inicio" class="logo-link" aria-label="Voltar ao início">
+                <span class="logo-symbol" aria-hidden="true">🌿</span>
+                <span class="logo-text">IA no Campo</span>
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="#introducao" class="nav-link">Introdução</a></li>
+                    <li><a href="#contexto" class="nav-link">Contexto</a></li>
+                    <li><a href="#aplicacoes" class="nav-link">Aplicações</a></li>
+                    <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
+                    <li><a href="#desafios" class="nav-link">Desafios</a></li>
+                    <li><a href="#futuro" class="nav-link">Futuro</a></li>
+                    <li><a href="#referencias" class="nav-link">Referências</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <button type="button" class="control-btn" id="fontDecrease" aria-label="Diminuir tamanho da fonte" title="Diminuir fonte">A-</button>
+                <button type="button" class="control-btn" id="fontIncrease" aria-label="Aumentar tamanho da fonte" title="Aumentar fonte">A+</button>
+                <button type="button" class="control-btn theme-toggle" id="themeToggle" aria-label="Alternar tema claro e escuro" title="Alternar tema">
+                    <span class="theme-icon" id="themeIcon">🌙</span>
+                </button>
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menu mobile" aria-expanded="false" aria-controls="mainNav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="hero-section" id="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 class="hero-title" id="hero-title">Inteligência Artificial Aplicada à Agricultura</h1>
+                <p class="hero-subtitle">Uma Pesquisa Aprofundada sobre Tecnologias, Aplicações e o Futuro do Agronegócio</p>
+                <div class="hero-stats" id="heroStats">
+                    <article class="stat-card">
+                        <span class="stat-number" data-target="25">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Aumento na Produtividade</span>
+                    </article>
+                    <article class="stat-card">
+                        <span class="stat-number" data-target="30">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Redução no Uso de Água</span>
+                    </article>
+                    <article class="stat-card">
+                        <span class="stat-number" data-target="97">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Precisão em Diagnósticos</span>
+                    </article>
+                </div>
+                <a href="#introducao" class="hero-cta">Explorar a Pesquisa</a>
+            </div>
+            <div class="hero-visual">
+                <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+            </div>
+        </section>
+
+        <section class="content-section" id="introducao" aria-labelledby="intro-title">
+            <div class="section-container">
+                <header class="section-header">
+                    <span class="section-tag">01. Introdução</span>
+                    <h2 class="section-title" id="intro-title">A Revolução Tecnológica no Campo</h2>
+                </header>
+                <div class="section-body">
+                    <p class="lead-text">A agricultura global enfrenta desafios sem precedentes no século XXI. Com uma população mundial projetada para alcançar 9,7 bilhões de pessoas até 2050, a demanda por alimentos deve aumentar entre 50% e 70% nas próximas décadas.</p>
+                    <p>Simultaneamente, o setor agrícola precisa lidar com as mudanças climáticas, a escassez de recursos hídricos, a degradação do solo e a necessidade urgente de reduzir o impacto ambiental da produção de alimentos.</p>
+                    <p>É nesse contexto desafiador que a Inteligência Artificial emerge como uma das tecnologias mais promissoras para transformar a agricultura. Diferentemente do que muitos imaginam, a IA no campo não é mais uma promessa futurista restrita a laboratórios de alta tecnologia. Ela já é uma realidade concreta, acessível e em rápida expansão, impactando desde pequenas propriedades familiares até grandes empresas do agronegócio.</p>
+                    <p>A aplicação de técnicas como machine learning, deep learning, visão computacional e sensoriamento remoto está revolucionando a maneira como os agricultores monitoram suas plantações, preveem colheitas, detectam doenças e gerenciam recursos. Esta pesquisa oferece uma análise abrangente das principais aplicações da IA na agricultura, baseada nos mais recentes avanços científicos e tecnológicos reportados na literatura internacional entre 2024 e 2026.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section section-alt" id="contexto" aria-labelledby="contexto-title">
+            <div class="section-container">
+                <header class="section-header">
+                    <span class="section-tag">02. Contexto Global</span>
+                    <h2 class="section-title" id="contexto-title">A Urgência da Transformação Digital</h2>
+                </header>
+                <div class="two-columns">
+                    <article class="column-card">
+                        <h3 class="column-title">Os Desafios da Agricultura Contemporânea</h3>
+                        <p>O sistema alimentar global está sob pressão crescente de múltiplas frentes. As mudanças climáticas intensificam eventos extremos como secas, enchentes e ondas de calor, afetando diretamente a produtividade das culturas.</p>
+                        <p>A escassez de água doce, agravada pelo consumo intensivo da agricultura que responde por cerca de 70% do uso global, exige soluções mais eficientes. Além disso, a degradação do solo e a perda de biodiversidade comprometem a capacidade produtiva de longo prazo das áreas agricultáveis.</p>
+                        <p>Estudos indicam que as doenças de plantas causam perdas anuais entre 20% e 40% da produção global de culturas, representando não apenas prejuízos econômicos significativos, mas também uma ameaça direta à segurança alimentar de milhões de pessoas.</p>
+                    </article>
+                    <article class="column-card">
+                        <h3 class="column-title">O Papel da Inteligência Artificial</h3>
+                        <p>Diante desse cenário, a IA surge como uma ferramenta capaz de endereçar múltiplos desafios simultaneamente. De acordo com uma revisão sistemática publicada na Frontiers in Sustainable Food Systems, as aplicações de IA na agricultura estão diretamente alinhadas com os Objetivos de Desenvolvimento Sustentável da ONU, especialmente o ODS 2 (Fome Zero) e o ODS 12 (Consumo e Produção Responsáveis).</p>
+                        <div class="impact-list">
+                            <div class="impact-item">
+                                <span class="impact-value">+20 a 25%</span>
+                                <span class="impact-desc">Aumento na produtividade das culturas</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-value">-30%</span>
+                                <span class="impact-desc">Redução no uso de água e fertilizantes</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-value">-20%</span>
+                                <span class="impact-desc">Diminuição nas emissões agrícolas</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-value">+20 a 30%</span>
+                                <span class="impact-desc">Melhoria na precisão das previsões</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="aplicacoes" aria-labelledby="apps-title">
+            <div class="section-container">
+                <header class="section-header">
+                    <span class="section-tag">03. Principais Aplicações</span>
+                    <h2 class="section-title" id="apps-title">IA Transformando a Lavoura</h2>
+                </header>
+                <div class="tabs-container" id="appsTabs">
+                    <div class="tabs-nav" role="tablist" aria-label="Aplicações da IA na agricultura">
+                        <button type="button" class="tab-btn active" role="tab" id="tab-predicao" aria-selected="true" aria-controls="panel-predicao" tabindex="0">
+                            <span class="tab-icon" aria-hidden="true">📈</span>
+                            <span>Predição de Produtividade</span>
+                        </button>
+                        <button type="button" class="tab-btn" role="tab" id="tab-doencas" aria-selected="false" aria-controls="panel-doencas" tabindex="-1">
+                            <span class="tab-icon" aria-hidden="true">🍃</span>
+                            <span>Detecção de Doenças</span>
+                        </button>
+                        <button type="button" class="tab-btn" role="tab" id="tab-privacidade" aria-selected="false" aria-controls="panel-privacidade" tabindex="-1">
+                            <span class="tab-icon" aria-hidden="true">🔒</span>
+                            <span>Transparência e Privacidade</span>
+                        </button>
+                        <button type="button" class="tab-btn" role="tab" id="tab-precisao" aria-selected="false" aria-controls="panel-precisao" tabindex="-1">
+                            <span class="tab-icon" aria-hidden="true">🎯</span>
+                            <span>Agricultura de Precisão</span>
+                        </button>
+                    </div>
+                    <div class="tabs-panels">
+                        <article class="tab-panel active" id="panel-predicao" role="tabpanel" aria-labelledby="tab-predicao">
+                            <div class="panel-grid">
+                                <div class="panel-text">
+                                    <h3>Predição de Produtividade Agrícola</h3>
+                                    <p>Uma das aplicações mais maduras e impactantes da IA na agricultura é a predição de produtividade das culturas. Modelos avançados de machine learning e deep learning estão sendo capazes de transformar dados de satélite, informações climáticas e características do solo em previsões precisas de colheita.</p>
+                                    <p>O framework <strong>FARM</strong> (Fine-Tuning Agricultural Regression Models), desenvolvido por pesquisadores e publicado no arXiv em 2025, representa um avanço significativo. Utilizando o modelo fundacional geoespacial Prithvi-EO-2.0-600M, o sistema consegue prever a produtividade de canola em resolução de 30 metros, alcançando um R² de 0,81 e um erro médio quadrático de apenas 0,44.</p>
+                                    <p>Na África, pesquisadores desenvolveram um framework inovador para mapeamento de produtividade do milho em 42 países, utilizando uma combinação de modelos como XGBoost, LightGBM e modelos fundacionais tabulares como o TabPFN. O XGBoost alcançou o melhor desempenho temporal com R² de 0,78, enquanto o TabPFN demonstrou superior capacidade de generalização espacial.</p>
+                                    <p>Estudos na região do Paquistão demonstraram que modelos de Long Short-Term Memory (LSTM) combinando múltiplos dados de safra, reflectância espectral e índices de vegetação alcançaram R² de 0,84 para predição de produtividade do trigo, superando modelos tradicionais como Random Forest.</p>
+                                </div>
+                                <div class="panel-visual">
+                                    <div class="panel-highlight">
+                                        <span class="highlight-label">R² FARM</span>
+                                        <span class="highlight-value">0,81</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="tab-panel" id="panel-doencas" role="tabpanel" aria-labelledby="tab-doencas" hidden>
+                            <div class="panel-grid">
+                                <div class="panel-text">
+                                    <h3>Detecção e Classificação de Doenças em Plantas</h3>
+                                    <p>A detecção precoce de doenças é outra área onde a IA tem demonstrado resultados impressionantes, com potencial para reduzir drasticamente as perdas na produção.</p>
+                                    <p>O framework <strong>ConMamba</strong>, publicado na Pattern Recognition journal em 2026, introduz uma abordagem inovadora utilizando o conceito de Vision Mamba. Diferentemente das arquiteturas tradicionais como CNNs ou Transformers, o modelo baseado em State Space Models (SSM) consegue capturar dependências de longo alcance nas imagens com complexidade computacional linear, sendo significativamente mais eficiente.</p>
+                                    <p>Pesquisadores indianos desenvolveram e compararam três arquiteturas de deep learning baseadas em transfer learning para detecção de doenças em oito culturas diferentes. A MobileNetV3 foi selecionada como modelo principal por seu equilíbrio entre desempenho e eficiência computacional. O sistema foi implementado como uma Progressive Web Application (PWA) multilíngue, onde os usuários podem enviar imagens de suas plantas e receber não apenas a identificação da doença, mas também opções de tratamento geradas por um Large Language Model (LLM).</p>
+                                    <p>O framework <strong>AgriVisionNet</strong>, publicado no Journal of Big Data em 2026, combina uma Multi Generative Adversarial Network (GAN) com um Class-Aware MultiScale Vision Transformer (CMViT), alcançando acurácia de 97,2% e F1-score de 97%.</p>
+                                </div>
+                                <div class="panel-visual">
+                                    <div class="panel-highlight">
+                                        <span class="highlight-label">Acurácia</span>
+                                        <span class="highlight-value">97,2%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="tab-panel" id="panel-privacidade" role="tabpanel" aria-labelledby="tab-privacidade" hidden>
+                            <div class="panel-grid">
+                                <div class="panel-text">
+                                    <h3>Transparência e Privacidade: Federated Learning e Explainable AI</h3>
+                                    <p>Dois desafios críticos para a adoção em larga escala da IA na agricultura são a falta de transparência dos modelos ("caixas-pretas") e as preocupações com a privacidade dos dados dos produtores. Avanços recentes em Federated Learning (FL) e Explainable AI (XAI) estão endereçando essas questões.</p>
+                                    <p>Uma revisão sistemática publicada no International Journal of Computational Intelligence Systems em 2026 analisou 145 estudos entre 2023 e 2025. Os resultados revelam que técnicas de XAI como Grad-CAM, LIME e SHAP melhoram significativamente a transparência e a confiança nos modelos, permitindo que agricultores e especialistas compreendam quais características das imagens levaram a uma determinada classificação.</p>
+                                    <p>O <strong>Federated Learning</strong>, por sua vez, permite que diferentes propriedades e instituições colaborem no treinamento de modelos compartilhados sem que precisem compartilhar seus dados brutos. Cada participante treina o modelo localmente com seus próprios dados e envia apenas as atualizações dos parâmetros para um servidor central, que agrega as contribuições para melhorar o modelo global. Essa abordagem preserva a soberania dos dados e reduz a necessidade de comunicação.</p>
+                                </div>
+                                <div class="panel-visual">
+                                    <div class="panel-highlight">
+                                        <span class="highlight-label">Estudos</span>
+                                        <span class="highlight-value">145</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="tab-panel" id="panel-precisao" role="tabpanel" aria-labelledby="tab-precisao" hidden>
+                            <div class="panel-grid">
+                                <div class="panel-text">
+                                    <h3>Agricultura de Precisão e Nutrição</h3>
+                                    <p>A integração entre IA e Internet das Coisas (IoT) está transformando a agricultura convencional em sistemas de precisão capazes de monitorar e otimizar cada aspecto da produção em tempo real.</p>
+                                    <p>Sensores IoT de baixo custo podem monitorar continuamente a umidade do solo, a temperatura, os níveis de nutrientes e a atividade de pragas. Os dados coletados são processados por algoritmos de machine learning que geram recomendações personalizadas para irrigação, fertilização e aplicação de defensivos. Estudos demonstram que esses sistemas podem reduzir o uso de água e fertilizantes em até 30%, mantendo ou até aumentando a produtividade.</p>
+                                    <p>Uma área emergente e particularmente promissora é a aplicação da IA para agricultura focada em nutrição. Ao invés de maximizar apenas a produtividade, sistemas inteligentes estão sendo desenvolvidos para otimizar o perfil nutricional dos alimentos. Isso inclui o monitoramento em tempo real de micronutrientes no solo, a previsão de deficiências nutricionais nas plantas e a recomendação de práticas de biofortificação para aumentar o teor de vitaminas e minerais nas culturas.</p>
+                                </div>
+                                <div class="panel-visual">
+                                    <div class="panel-highlight">
+                                        <span class="highlight-label">Economia</span>
+                                        <span class="highlight-value">30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section section-alt" id="tecnologias" aria-labelledby="tech-title">
+            <div class="section-container">
+                <header class="section-header">
+                    <span class="section-tag">04. Tecnologias e Metodologias</span>
+                    <h2 class="section-title" id="tech-title">As Ferramentas da Revolução</h2>
+                </header>
+                <div class="tech-grid">
+                    <article class="tech-card">
+                        <div class="tech-header">
+                            <span class="tech-icon" aria-hidden="true">🧠</span>
+                            <h3 class="tech-title">Modelos de Deep Learning</h3>
+                        </div>
+                        <div class="tech-content">
+                            <p><strong>CNNs:</strong> Amplamente aplicadas para análise de imagens de folhas, detecção de doenças e classificação de culturas. Arquiteturas como ResNet, EfficientNet e MobileNet são particularmente populares.</p>
+                            <p><strong>RNNs e LSTM:</strong> Especialmente úteis para processamento de séries temporais, como previsão de produtividade baseada em dados climáticos e fenológicos.</p>
+                            <p><strong>Vision Transformers:</strong> Embora mais computacionalmente intensivos, demonstram superior capacidade de capturar dependências de longo alcance em imagens.</p>
+                            <p><strong>Modelos Fundacionais:</strong> Pré-treinados em grandes conjuntos de dados diversos, ajustáveis para tarefas específicas com dados limitados, como TabPFN e Prithvi-EO-2.0-600M.</p>
+                        </div>
+                    </article>
+                    <article class="tech-card">
+                        <div class="tech-header">
+                            <span class="tech-icon" aria-hidden="true">🗂️</span>
+                            <h3 class="tech-title">Fontes de Dados</h3>
+                        </div>
+                        <div class="tech-content">
+                            <p><strong>Imagens de Satélite:</strong> Programas como Sentinel-2, Landsat e MODIS fornecem imagens multiespectrais em diferentes resoluções, permitindo o monitoramento contínuo de grandes áreas.</p>
+                            <p><strong>Dados Climáticos:</strong> Bases como ERA5-Land fornecem dados históricos e em tempo real de temperatura, precipitação, radiação solar, umidade e velocidade do vento.</p>
+                            <p><strong>Dados de Solo:</strong> Informações sobre textura, pH, carbono orgânico, capacidade de retenção de água e nutrientes são essenciais para predições precisas.</p>
+                            <p><strong>Conjuntos Públicos:</strong> Plataformas como PlantVillage, PlantDoc e Mendeley disponibilizam milhares de imagens de folhas saudáveis e doentes.</p>
+                        </div>
+                    </article>
+                    <article class="tech-card tech-card-wide">
+                        <div class="tech-header">
+                            <h3 class="tech-title">Aprendizado Self-Supervised e Contrastivo</h3>
+                        </div>
+                        <div class="tech-content">
+                            <p>Uma das principais limitações para a adoção da IA na agricultura é a escassez de dados rotulados de alta qualidade. O aprendizado auto-supervisionado oferece uma alternativa promissora ao permitir que modelos aprendam representações úteis a partir de grandes quantidades de dados não rotulados.</p>
+                            <p>O framework ConMamba exemplifica essa abordagem, utilizando aprendizado contrastivo para alinhar características locais e globais de imagens de folhas, dispensando a necessidade de anotações extensivas. Os resultados experimentais demonstram que essa estratégia supera significativamente os métodos state-of-the-art em três conjuntos de dados de referência.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="desafios" aria-labelledby="desafios-title">
+            <div class="section-container">
+                <header class="section-header">
+                    <span class="section-tag">05. Desafios e Limitações</span>
+                    <h2 class="section-title" id="desafios-title">Obstáculos a Superar</h2>
+                </header>
+                <div class="challenges-container">
+                    <div class="challenge-item" data-direction="left">
+                        <div class="challenge-marker">01</div>
+                        <div class="challenge-body">
+                            <h3>Generalização para Condições Reais</h3>
+                            <p>Um dos principais desafios identificados na literatura é a dificuldade de generalização dos modelos treinados em condições controladas para o ambiente real do campo. Variações na iluminação, no clima, na complexidade do fundo das imagens e na diversidade genética das plantas podem reduzir drasticamente a acurácia dos modelos quando implantados em escala.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item" data-direction="right">
+                        <div class="challenge-marker">02</div>
+                        <div class="challenge-body">
+                            <h3>Viés e Desbalanceamento dos Dados</h3>
+                            <p>A maioria dos conjuntos de dados disponíveis publicamente é dominada por certas culturas, doenças e regiões geográficas, com sub-representação de outras. Isso pode levar a modelos com desempenho excelente nos dados de teste, mas que falham ao encontrar variedades ou condições não presentes no treinamento.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item" data-direction="left">
+                        <div class="challenge-marker">03</div>
+                        <div class="challenge-body">
+                            <h3>Privacidade e Propriedade dos Dados</h3>
+                            <p>Agricultores e instituições de pesquisa frequentemente hesitam em compartilhar seus dados, seja por preocupações com propriedade intelectual, seja por receio de que informações competitivas sejam expostas. O Federated Learning surge como uma solução promissora, mas sua implementação ainda enfrenta desafios técnicos e de governança.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item" data-direction="right">
+                        <div class="challenge-marker">04</div>
+                        <div class="challenge-body">
+                            <h3>Acessibilidade e Inclusão Digital</h3>
+                            <p>O custo dos sensores IoT, a necessidade de conectividade à internet e a falta de treinamento em tecnologias digitais são barreiras significativas, especialmente para pequenos agricultores em países em desenvolvimento. Políticas públicas e iniciativas do setor privado são necessárias para democratizar o acesso a essas tecnologias.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item" data-direction="left">
+                        <div class="challenge-marker">05</div>
+                        <div class="challenge-body">
+                            <h3>Consumo Energético</h3>
+                            <p>Modelos de deep learning, especialmente aqueles baseados em Transformers e modelos fundacionais, podem exigir recursos computacionais substanciais para treinamento e inferência. O desenvolvimento de arquiteturas mais eficientes, como a Vision Mamba, e a implantação em dispositivos de borda (edge computing) são direções ativas de pesquisa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section section-alt" id="futuro" aria-labelledby="futuro-title">
+            <div class="section-container">
+                <header class="section-header">
+                    <span class="section-tag">06. Tendências Futuras</span>
+                    <h2 class="section-title" id="futuro-title">O Horizonte da Inovação</h2>
+                </header>
+                <div class="future-grid">
+                    <article class="future-card">
+                        <div class="future-visual">
+                            <span class="future-icon" aria-hidden="true">🧠</span>
+                            <div class="future-glow"></div>
+                        </div>
+                        <h3>Modelos Fundacionais Específicos</h3>
+                        <p>Assim como modelos como GPT revolucionaram o processamento de linguagem natural, espera-se o surgimento de modelos fundacionais especializados para agricultura, treinados em conjuntos massivos e diversos de dados agrícolas. Esses modelos poderão ser adaptados para uma ampla gama de tarefas com quantidades mínimas de dados adicionais.</p>
+                    </article>
+                    <article class="future-card">
+                        <div class="future-visual">
+                            <span class="future-icon" aria-hidden="true">🗂️</span>
+                            <div class="future-glow"></div>
+                        </div>
+                        <h3>Gêmeos Digitais</h3>
+                        <p>A combinação de IA com gêmeos digitais permitirá a simulação e otimização de sistemas agrícolas inteiros em ambiente virtual antes da implantação no mundo real. Isso inclui a simulação de cenários climáticos, estratégias de manejo e respostas a estresses bióticos e abióticos.</p>
+                    </article>
+                    <article class="future-card">
+                        <div class="future-visual">
+                            <span class="future-icon" aria-hidden="true">🤖</span>
+                            <div class="future-glow"></div>
+                        </div>
+                        <h3>Robótica Autônoma</h3>
+                        <p>O avanço da visão computacional e do aprendizado por reforço está permitindo o desenvolvimento de robôs agrícolas autônomos capazes de realizar tarefas como plantio, capina, colheita e aplicação localizada de insumos com precisão milimétrica.</p>
+                    </article>
+                    <article class="future-card">
+                        <div class="future-visual">
+                            <span class="future-icon" aria-hidden="true">🎯</span>
+                            <div class="future-glow"></div>
+                        </div>
+                        <h3>Agricultura Nutricional Inteligente</h3>
+                        <p>A convergência entre IA, genômica e metabolômica abrirá caminho para sistemas capazes de otimizar não apenas a produtividade, mas também o perfil nutricional dos alimentos, contribuindo para o combate à desnutrição e às doenças crônicas relacionadas à alimentação.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="conclusao" aria-labelledby="conclusao-title">
+            <div class="section-container section-narrow">
+                <header class="section-header text-center">
+                    <span class="section-tag">07. Conclusão</span>
+                    <h2 class="section-title" id="conclusao-title">A Agricultura do Amanhã</h2>
+                </header>
+                <div class="conclusion-body">
+                    <p class="lead-text text-center">A Inteligência Artificial está redefinindo os limites do que é possível na agricultura. Desde a predição precisa de produtividade até a detecção precoce de doenças, passando pela otimização de recursos e pela democratização do acesso ao conhecimento especializado, as aplicações são vastas e promissoras.</p>
+                    <p>Os avanços recentes em modelos fundacionais, aprendizado auto-supervisionado e arquiteturas eficientes como a Vision Mamba estão superando limitações históricas relacionadas à escassez de dados e ao custo computacional. Simultaneamente, o desenvolvimento de técnicas de Explainable AI e Federated Learning está construindo a confiança e a privacidade necessárias para a adoção em larga escala.</p>
+                    <p>Contudo, desafios significativos permanecem, especialmente no que diz respeito à generalização dos modelos para condições reais, ao viés dos dados, à acessibilidade para pequenos produtores e à inclusão digital. Superar esses desafios exigirá não apenas inovação tecnológica, mas também políticas públicas adequadas, parcerias intersetoriais e um compromisso com o desenvolvimento ético e equitativo da IA.</p>
+                    <p class="text-center"><strong>O futuro da agricultura será cada vez mais inteligente, preciso e sustentável, e a Inteligência Artificial será a espinha dorsal dessa transformação.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section section-alt" id="referencias" aria-labelledby="ref-title">
+            <div class="section-container">
+                <header class="section-header">
+                    <span class="section-tag">08. Referências Bibliográficas</span>
+                    <h2 class="section-title" id="ref-title">Base Científica</h2>
+                </header>
+                <ol class="references-list" id="referencesList">
+                    <li class="ref-item" data-year="2025">NEJADSHAMSI, Shayan; KHOSHDEL, Vahab; et al. FARM: Fine-Tuning Geospatial Foundation Models for Intra-Field Crop Yield Regression. arXiv preprint, 2025.</li>
+                    <li class="ref-item" data-year="2026">MENG, Q.; YANG, J.; et al. ConMamba: Contrastive vision Mamba for plant disease detection. Pattern Recognition, v. 176, 2026.</li>
+                    <li class="ref-item" data-year="2026">DAS, A.; SINGH, P.; et al. Integrating Federated Learning and Explainable AI for Plant Disease Detection: A Systematic Review of Recent Advances in Precision Agriculture. International Journal of Computational Intelligence Systems, v. 19, 2026.</li>
+                    <li class="ref-item" data-year="2025">ISHAQ, R.A.F.; ZHOU, G.; JING, G.; et al. Geospatial Robust Wheat Yield Prediction Using Machine Learning and Integrated Crop Growth Model and Time-Series Satellite Data. Agris/FAO, 2025.</li>
+                    <li class="ref-item" data-year="2026">SRIVASTAVA, A.; BHOLA, A.; FRNDA, J.; et al. Deep convolutional models for robust multi-crop disease recognition in real-world conditions. Scientific Reports, 2026.</li>
+                    <li class="ref-item" data-year="2026">DASGUPTA, S.; CHAKRABORTY, S.; et al. Ai and IoT are no longer limited to high-tech labs but are improving nutrition-focused agricultural farming. Discover Food, v. 6, 2026.</li>
+                    <li class="ref-item" data-year="2025">CHAKI, P.; BANDYOPADHYAY, S.; et al. High-resolution maize yield mapping across Africa using earth observation and machine learning, deep learning, and foundation model. Remote Sensing Applications: Society and Environment, 2025.</li>
+                    <li class="ref-item" data-year="2026">PATEL, R.K.; REDDY, M.S.; et al. AgriVisionNet: multi-generative adversarial network and Class-Aware MultiScale Vision Transformer for plant disease detection and severity classification. Journal of Big Data, 2026.</li>
+                    <li class="ref-item" data-year="2026">CHAKRABORTY, S.; DASGUPTA, P.; et al. Bridging technology and sustainability: a systematic review of AI applications in global food systems. Frontiers in Sustainable Food Systems, 2026.</li>
+                    <li class="ref-item" data-year="2025">KUMAR, A.; SHARMA, V.; et al. Integrated Deep Learning Framework for Precision Crop Yield Prediction Using Satellite Imagery and Real-Time Environmental Data. IEEE Conference Proceedings, 2025.</li>
+                </ol>
+                <div class="references-filter">
+                    <label for="refSort" class="filter-label">Ordenar referências:</label>
+                    <select id="refSort" class="filter-select">
+                        <option value="default">Ordem original</option>
+                        <option value="year-asc">Ano (crescente)</option>
+                        <option value="year-desc">Ano (decrescente)</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span>IA no Campo</span>
+                <p>Pesquisa desenvolvida para o Concurso Agrinho 2026 — Programação.</p>
+                <p>Aluna: Monyk Ribeiro</p>
+                <p>Escola: Padre Claudio Morelli</p>
+                <p>Professor: Rafael Biano</p>
+            </div>
+            <div class="footer-info">
+                <p>Conteúdo 100% autoral baseado em pesquisa científica.</p>
+            </div>
+        </div>
+
+        <button type="button" class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
